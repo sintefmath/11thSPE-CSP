@@ -30,7 +30,7 @@ import requests  # pylint: disable=import-error
 import numpy as np  # pylint: disable=import-error
 
 parser = argparse.ArgumentParser(
-    description="This script generates tables for H2O and CO2 fluid properties \n"
+    description="This script generates tables for H2O and H2 fluid properties \n"
     "(density and enthalpy) using the NIST Chemistry WebBook.\n"
 )
 parser.add_argument(
@@ -62,7 +62,7 @@ parser.add_argument(
     "min_press is the first sampling point, max_press the last.",
 )
 parser.add_argument(
-    "-c", "--comp_name", required=True, help="The component name, either 'CO2' or 'H2O'."
+    "-c", "--comp_name", required=True, help="The component name, either 'H2' or 'H2O'."
 )
 cmdArgs = vars(parser.parse_args())
 
